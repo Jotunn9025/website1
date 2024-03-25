@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 200%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #2a0049, #280f62, #1c0642,#2a0049);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+}
+.menu-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #444;
+}
+
+.content {
+    padding: 20px;
+}
+
+.floatinimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.float {
+    height: 30vh;
+    animation: floatIn 1s ease-in-out; /* Animation for floating in */
+    opacity: 0; /* Initially hidden */
+}
+
+@keyframes floatIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.content{
+    color: aliceblue;
+}
+.interests {
+    animation: floatInLeft 2s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes floatInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.sidenav a:hover {
+    background-color: white;
+    color: black;
+}
+.body{
+    width: 100vw;
+}
+.edu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.edu img{
+    width: 40vw;
+    
+    height: auto;
+    
+}
+header{
+    display: flex;
+}
+.esidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.esidenav a:hover {
+color: black;
+background-color: white;
+}
+
+.esidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+.ebody{
+    width: 100vw;
+}

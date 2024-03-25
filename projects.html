@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="pbody">
+        <header>
+            <div class="logo"><a href="index.html">
+                <img src="inkpx-word-art.jpg" alt="Logo"></a>
+            </div>
+            <button class="menu-btn" onclick="toggleNav()">Menu</button>
+        </header>
+        
+        <nav class="psidenav" id="sidenav">
+            <div class="sidenavstuff">
+                <a href="index.html" data-value="HOME">HOME</a>
+            </div>
+            <hr>
+            <div class="sidenavstuff">
+                <a href="projects.html" data-value="PROJECTS">PROJECTS</a>
+            </div>
+            <hr>
+            <div class="sidenavstuff">
+                <a href="education.html" data-value="EDUCATION">EDUCATION</a>
+            </div>
+            <hr>
+            <div class="sidenavstuff">
+                <a href="https://linktr.ee/somebody that u used to know" data-value="LINKS">LINKS</a>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <a href="https://github.com/Jotunn9025/Pokedex">
+                       <p>Pokedex Image Recognition</p></a>
+                    <img src="images/slide/thimo-pedersen-dip9IIwUK6w-unsplash.jpg" style="width:100%;">
+                    <div class="myslidescontent"><br>
+                        Trained up a image recognition model to recognize all 150 pokemon from generation 1 and hooked it up to an arduino so as to recognize pictures take by said arduino
+                    </div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <a href="https://github.com/Jotunn9025/website1"><p>Website</p></a>
+                    <img src="images/slide/remotar-jobs-s5kTY-Ve1c0-unsplash.jpg" style="width:100%">
+                    <div class="myslidescontent"><br>
+                        Made a simple compilation all the recent projects undertaken by me as well as a brief introduction to me
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="https://github.com/Jotunn9025/discord-bot"><p>Discord Bot</p></a>
+                    <img src="images/slide/alexander-shatov-sIFCJHrUWPM-unsplash.jpg" style="width:100%">
+                    <div class="myslidescontent"><br>
+                        Made a simple discord bot which has predetermined responses to certain commands as well as the ability to roll dice
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="https://github.com/Jotunn9025/bmicalculator"><p>BMI Calculator</p></a>
+                    <img src="images/slide/rinat-t-micW08LaN2Y-unsplash.jpg" style="width:100%">
+                    <div class="myslidescontent"><br>
+                        Made a simple BMI calculator in flutter which functions in both imperial and metric system and the result are color coded
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="https://github.com/Jotunn9025/todolist"><p>To-Do List</p></a>
+                    <img src="images/slide/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg" style="width:100%">
+                    <div class="myslidescontent"><br>
+                        Made a simple To Do list app in flutter reminiscent of a notes app but with the ability to add time as well as checkmarks indicating completion
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="projects.js" defer></script> <!-- JavaScript for slideshow -->
+    <script src="script.js" defer></script>
+</body>
+</html>

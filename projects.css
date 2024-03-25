@@ -1,0 +1,67 @@
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: column;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.mySlides p{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    font-size: x-large;
+}
+.mySlides img{
+    height: 70vh;
+    width: auto;
+}
+.myslidescontent{
+    color: aliceblue;
+    font-size: large;
+}
+.psidenav a:hover {
+    background-color: white;
+    color: black;
+}
+.psidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.psidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+.pbody{
+    width: 100vw;
+}
